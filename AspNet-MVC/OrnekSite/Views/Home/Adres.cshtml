@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">Anasayfa</a> <span class="divider">/</span></li>
+            <li class="active">Adres</li>
+        </ul>
+        <div class="well well-small">
+            <h4>Adres : Adana İş Merkezi Kat 6 No:22 Seyhan/Adana</h4>
+            <h4>Telefon : 0322 365 26 18</h4>
+            <hr class="softn clr">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.606330241477!2d35.25098161515055!3d36.995328979908855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152887ce81a7dd4b%3A0x4579662b39d2b33d!2zWWXFn2lsb2JhLCBBZGFuYSDEsMWfIE1yay4sIDAxMTAwIFNleWhhbi9BZGFuYQ!5e0!3m2!1str!2str!4v1652093651994!5m2!1str!2str"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+</div>
+
